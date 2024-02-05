@@ -1,4 +1,5 @@
 import "package:flutter/material.dart";
+import "package:smart_shop/screens/scan/scanner.dart";
 
 class ProcessCard extends StatefulWidget {
   final String process_name;
@@ -20,6 +21,7 @@ class _ProcessCardState extends State<ProcessCard> {
         }
         else if (widget.process_name == "Scan"){
           // call the scanning page
+          Scanner();
         }
         else if(widget.process_name == "Return"){
           // call the return page
