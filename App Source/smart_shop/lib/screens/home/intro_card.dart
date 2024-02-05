@@ -22,8 +22,8 @@ class _Intro_cardState extends State<Intro_card> {
       height: MediaQuery.of(context).size.height * 0.3,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
-        color: Color.fromRGBO(124, 191, 23, 1),
-        borderRadius: BorderRadius.only(bottomLeft: Radius.circular(60), bottomRight: Radius.circular(60))
+        color: Color.fromRGBO(47, 60, 51, 1),
+        borderRadius: BorderRadius.only(bottomLeft: Radius.circular(50), bottomRight: Radius.circular(50))
       ),
       child: SafeArea(
         child: Padding(
@@ -66,13 +66,13 @@ class _Intro_cardState extends State<Intro_card> {
                   ),
                 ],
               ),
-              SizedBox(height: 15,),
+              SizedBox(height: 9,),
               // shop name
               Center(
                 child: Container(
                   width: MediaQuery.of(context).size.width*0.9 ,
                   decoration: BoxDecoration(
-                    color: Color.fromRGBO(98, 160, 13, 1),
+                    color: Color.fromRGBO(72, 82, 74, 1),
                     borderRadius: BorderRadius.circular(60),
                   ),
                   child: Row(
@@ -81,7 +81,7 @@ class _Intro_cardState extends State<Intro_card> {
                       Icon(Icons.house_rounded, color: Colors.white,),
                       SizedBox(width: 10,),
                       Text('${widget.shop_name}',
-                        style: TextStyle(color: Colors.white, fontSize: 26, fontWeight: FontWeight.bold),
+                        style: TextStyle(color: Colors.white, fontSize: 23, fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
